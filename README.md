@@ -7,6 +7,7 @@ This is a fork of [coreutils](https://github.com/coreutils/coreutils) with a mod
 ## Dependencies
 
 - clang
+- gperf
 - [icons-in-terminal](https://github.com/sebastiencs/icons-in-terminal)  
 
 ## Installation
@@ -19,7 +20,7 @@ $ export CFLAGS=-DNO_TRUE_COLOURS=1 # Execute this line _only_ if your terminal 
 $ export CC=clang CXX=clang++
 $ ./configure --prefix=/opt/coreutils
 $ make
-$ make install
+$ sudo make install
 $ /opt/coreutils/bin/ls
 ```
 You can check if your terminal support true colours [here](https://gist.github.com/XVilka/8346728#now-supporting-truecolour).
